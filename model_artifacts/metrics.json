@@ -1,0 +1,690 @@
+{
+  "CAD": {
+    "target": "CAD",
+    "target_name": "Overall Coronary Artery Disease",
+    "accuracy": 0.951,
+    "precision": 0.979,
+    "recall": 0.958,
+    "f1": 0.968,
+    "roc_auc": 0.957,
+    "confusion_matrix": {
+      "tp": 46,
+      "tn": 12,
+      "fp": 1,
+      "fn": 2
+    },
+    "roc_curve": [
+      {
+        "threshold": 0.65,
+        "fpr": 0.0,
+        "tpr": 0.917
+      },
+      {
+        "threshold": 0.7,
+        "fpr": 0.0,
+        "tpr": 0.917
+      },
+      {
+        "threshold": 0.75,
+        "fpr": 0.0,
+        "tpr": 0.896
+      },
+      {
+        "threshold": 0.8,
+        "fpr": 0.0,
+        "tpr": 0.833
+      },
+      {
+        "threshold": 0.85,
+        "fpr": 0.0,
+        "tpr": 0.583
+      },
+      {
+        "threshold": 0.9,
+        "fpr": 0.0,
+        "tpr": 0.417
+      },
+      {
+        "threshold": 0.95,
+        "fpr": 0.0,
+        "tpr": 0.125
+      },
+      {
+        "threshold": 1.0,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.5,
+        "fpr": 0.077,
+        "tpr": 0.958
+      },
+      {
+        "threshold": 0.55,
+        "fpr": 0.077,
+        "tpr": 0.958
+      },
+      {
+        "threshold": 0.6,
+        "fpr": 0.077,
+        "tpr": 0.938
+      },
+      {
+        "threshold": 0.4,
+        "fpr": 0.154,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.45,
+        "fpr": 0.154,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.3,
+        "fpr": 0.231,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.35,
+        "fpr": 0.231,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.25,
+        "fpr": 0.462,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.1,
+        "fpr": 0.692,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.15,
+        "fpr": 0.692,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.2,
+        "fpr": 0.692,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.0,
+        "fpr": 1.0,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.05,
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "top_features": [
+      {
+        "feature": "Region RWMA",
+        "importance": 0.0733
+      },
+      {
+        "feature": "EF-TTE",
+        "importance": 0.0601
+      },
+      {
+        "feature": "Age",
+        "importance": 0.0547
+      },
+      {
+        "feature": "LDL",
+        "importance": 0.049
+      },
+      {
+        "feature": "Nonanginal",
+        "importance": 0.049
+      },
+      {
+        "feature": "BUN",
+        "importance": 0.0462
+      },
+      {
+        "feature": "TG",
+        "importance": 0.0438
+      },
+      {
+        "feature": "WBC",
+        "importance": 0.0384
+      },
+      {
+        "feature": "ESR",
+        "importance": 0.0382
+      },
+      {
+        "feature": "Exertional CP",
+        "importance": 0.0275
+      },
+      {
+        "feature": "Na",
+        "importance": 0.027
+      },
+      {
+        "feature": "FBS",
+        "importance": 0.027
+      }
+    ]
+  },
+  "LAD": {
+    "target": "LAD",
+    "target_name": "Left Anterior Descending Stenosis",
+    "accuracy": 0.787,
+    "precision": 0.814,
+    "recall": 0.875,
+    "f1": 0.843,
+    "roc_auc": 0.747,
+    "confusion_matrix": {
+      "tp": 35,
+      "tn": 13,
+      "fp": 8,
+      "fn": 5
+    },
+    "roc_curve": [
+      {
+        "threshold": 0.9,
+        "fpr": 0.0,
+        "tpr": 0.025
+      },
+      {
+        "threshold": 0.95,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 1.0,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.85,
+        "fpr": 0.143,
+        "tpr": 0.075
+      },
+      {
+        "threshold": 0.8,
+        "fpr": 0.19,
+        "tpr": 0.25
+      },
+      {
+        "threshold": 0.7,
+        "fpr": 0.238,
+        "tpr": 0.6
+      },
+      {
+        "threshold": 0.75,
+        "fpr": 0.238,
+        "tpr": 0.425
+      },
+      {
+        "threshold": 0.55,
+        "fpr": 0.333,
+        "tpr": 0.85
+      },
+      {
+        "threshold": 0.6,
+        "fpr": 0.333,
+        "tpr": 0.825
+      },
+      {
+        "threshold": 0.65,
+        "fpr": 0.333,
+        "tpr": 0.75
+      },
+      {
+        "threshold": 0.45,
+        "fpr": 0.381,
+        "tpr": 0.925
+      },
+      {
+        "threshold": 0.5,
+        "fpr": 0.381,
+        "tpr": 0.875
+      },
+      {
+        "threshold": 0.4,
+        "fpr": 0.429,
+        "tpr": 0.95
+      },
+      {
+        "threshold": 0.3,
+        "fpr": 0.524,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.35,
+        "fpr": 0.524,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.2,
+        "fpr": 0.714,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.25,
+        "fpr": 0.714,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.15,
+        "fpr": 0.762,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.1,
+        "fpr": 0.857,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.0,
+        "fpr": 1.0,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.05,
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "top_features": [
+      {
+        "feature": "Region RWMA",
+        "importance": 0.0753
+      },
+      {
+        "feature": "EF-TTE",
+        "importance": 0.0665
+      },
+      {
+        "feature": "LDL",
+        "importance": 0.0597
+      },
+      {
+        "feature": "TG",
+        "importance": 0.055
+      },
+      {
+        "feature": "ESR",
+        "importance": 0.0506
+      },
+      {
+        "feature": "PLT",
+        "importance": 0.0408
+      },
+      {
+        "feature": "BUN",
+        "importance": 0.0389
+      },
+      {
+        "feature": "WBC",
+        "importance": 0.0368
+      },
+      {
+        "feature": "Age",
+        "importance": 0.0322
+      },
+      {
+        "feature": "PR",
+        "importance": 0.032
+      },
+      {
+        "feature": "Length",
+        "importance": 0.0294
+      },
+      {
+        "feature": "Nonanginal",
+        "importance": 0.0277
+      }
+    ]
+  },
+  "LCX": {
+    "target": "LCX",
+    "target_name": "Left Circumflex Stenosis",
+    "accuracy": 0.754,
+    "precision": 0.5,
+    "recall": 0.133,
+    "f1": 0.211,
+    "roc_auc": 0.668,
+    "confusion_matrix": {
+      "tp": 2,
+      "tn": 44,
+      "fp": 2,
+      "fn": 13
+    },
+    "roc_curve": [
+      {
+        "threshold": 0.55,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.6,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.65,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.7,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.75,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.8,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.85,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.9,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.95,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 1.0,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.5,
+        "fpr": 0.043,
+        "tpr": 0.133
+      },
+      {
+        "threshold": 0.45,
+        "fpr": 0.087,
+        "tpr": 0.4
+      },
+      {
+        "threshold": 0.4,
+        "fpr": 0.326,
+        "tpr": 0.4
+      },
+      {
+        "threshold": 0.35,
+        "fpr": 0.5,
+        "tpr": 0.733
+      },
+      {
+        "threshold": 0.3,
+        "fpr": 0.609,
+        "tpr": 0.867
+      },
+      {
+        "threshold": 0.25,
+        "fpr": 0.783,
+        "tpr": 0.933
+      },
+      {
+        "threshold": 0.2,
+        "fpr": 0.826,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.15,
+        "fpr": 0.87,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.1,
+        "fpr": 0.935,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.05,
+        "fpr": 0.978,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.0,
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "top_features": [
+      {
+        "feature": "BUN",
+        "importance": 0.0601
+      },
+      {
+        "feature": "Length",
+        "importance": 0.0505
+      },
+      {
+        "feature": "Na",
+        "importance": 0.0435
+      },
+      {
+        "feature": "PR",
+        "importance": 0.0429
+      },
+      {
+        "feature": "ESR",
+        "importance": 0.0408
+      },
+      {
+        "feature": "Region RWMA",
+        "importance": 0.0406
+      },
+      {
+        "feature": "LDL",
+        "importance": 0.0405
+      },
+      {
+        "feature": "EF-TTE",
+        "importance": 0.0385
+      },
+      {
+        "feature": "Age",
+        "importance": 0.0364
+      },
+      {
+        "feature": "FBS",
+        "importance": 0.036
+      },
+      {
+        "feature": "K",
+        "importance": 0.0359
+      },
+      {
+        "feature": "WBC",
+        "importance": 0.0338
+      }
+    ]
+  },
+  "RCA": {
+    "target": "RCA",
+    "target_name": "Right Coronary Artery Stenosis",
+    "accuracy": 0.721,
+    "precision": 0.667,
+    "recall": 0.3,
+    "f1": 0.414,
+    "roc_auc": 0.725,
+    "confusion_matrix": {
+      "tp": 6,
+      "tn": 38,
+      "fp": 3,
+      "fn": 14
+    },
+    "roc_curve": [
+      {
+        "threshold": 0.55,
+        "fpr": 0.0,
+        "tpr": 0.2
+      },
+      {
+        "threshold": 0.6,
+        "fpr": 0.0,
+        "tpr": 0.1
+      },
+      {
+        "threshold": 0.65,
+        "fpr": 0.0,
+        "tpr": 0.1
+      },
+      {
+        "threshold": 0.7,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.75,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.8,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.85,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.9,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.95,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 1.0,
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "threshold": 0.5,
+        "fpr": 0.073,
+        "tpr": 0.3
+      },
+      {
+        "threshold": 0.45,
+        "fpr": 0.22,
+        "tpr": 0.4
+      },
+      {
+        "threshold": 0.4,
+        "fpr": 0.293,
+        "tpr": 0.55
+      },
+      {
+        "threshold": 0.35,
+        "fpr": 0.439,
+        "tpr": 0.75
+      },
+      {
+        "threshold": 0.3,
+        "fpr": 0.585,
+        "tpr": 0.95
+      },
+      {
+        "threshold": 0.25,
+        "fpr": 0.683,
+        "tpr": 0.95
+      },
+      {
+        "threshold": 0.2,
+        "fpr": 0.732,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.15,
+        "fpr": 0.78,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.1,
+        "fpr": 0.854,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.05,
+        "fpr": 0.976,
+        "tpr": 1.0
+      },
+      {
+        "threshold": 0.0,
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "top_features": [
+      {
+        "feature": "Region RWMA",
+        "importance": 0.0498
+      },
+      {
+        "feature": "LDL",
+        "importance": 0.0436
+      },
+      {
+        "feature": "EF-TTE",
+        "importance": 0.0391
+      },
+      {
+        "feature": "TG",
+        "importance": 0.0388
+      },
+      {
+        "feature": "ESR",
+        "importance": 0.0371
+      },
+      {
+        "feature": "Age",
+        "importance": 0.0369
+      },
+      {
+        "feature": "Neut",
+        "importance": 0.0367
+      },
+      {
+        "feature": "FBS",
+        "importance": 0.035
+      },
+      {
+        "feature": "PR",
+        "importance": 0.0348
+      },
+      {
+        "feature": "BMI",
+        "importance": 0.0348
+      },
+      {
+        "feature": "Lymph",
+        "importance": 0.0345
+      },
+      {
+        "feature": "K",
+        "importance": 0.0344
+      }
+    ]
+  }
+}

@@ -1,0 +1,5629 @@
+{
+  "target": "LAD",
+  "name": "Left Anterior Descending Stenosis",
+  "lr_weights": [
+    0.28312968197107813,
+    0.08435003755975949,
+    -0.013855328719490677,
+    0.08237914957202407,
+    -0.07058291977601767,
+    -0.17217738986925096,
+    0.11841207607379549,
+    0.14316687341964046,
+    0.35712516116313725,
+    0.48414067682997347,
+    -0.16912659756234355,
+    0.21099999506431658,
+    0.43071100123966793,
+    0.07191785069945421,
+    0.04439176060760689,
+    -0.03342282566031313,
+    0.29297373085712003,
+    0.03947317981127073,
+    -0.022374112472165343,
+    -0.030502909843153913,
+    -0.47182571604075174,
+    0.056445287311406446,
+    0.21194705503200778,
+    0.1128796173356598,
+    0.21541338812075594,
+    0.014622492184241262,
+    0.08873482706872497,
+    0.046141176438853765,
+    0.10041175043390016,
+    -0.00021868335275801787,
+    0.01572391670156763,
+    0.04920130641797237,
+    -0.05574590887100585,
+    0.270373637728988,
+    -0.08568268417367107,
+    -0.34755977589845566,
+    -0.3011943207365538,
+    0.10380762707963014,
+    0.2124941229428665,
+    -0.005495894605102008,
+    -0.01133744376902427,
+    0.09453443888341656,
+    -0.0005437894866015785,
+    -0.011995275820449468,
+    0.18613422365150026,
+    0.06556314907465045,
+    0.22298496428201314,
+    0.08986672330547209,
+    0.16068752373368217,
+    0.016315828346426156,
+    0.33216543325558673,
+    0.0021860737131621
+  ],
+  "lr_bias": -0.09872068743603735,
+  "trees": [
+    {
+      "is_leaf": false,
+      "feature_index": 8,
+      "feature_name": "TG",
+      "threshold": 0.1935,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 21,
+        "feature_name": "Sex",
+        "threshold": 0.5,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 2,
+          "feature_name": "Length",
+          "threshold": -0.784,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 5,
+            "feature_name": "PR",
+            "threshold": -1.0174,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 2,
+              "feature_name": "Length",
+              "threshold": -0.8557,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0455,
+                "n_samples": 22
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 3
+              },
+              "n_samples": 25
+            },
+            "n_samples": 26
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 48,
+            "feature_name": "LVH",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 11
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 9
+            },
+            "n_samples": 20
+          },
+          "n_samples": 46
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 7,
+          "feature_name": "CR",
+          "threshold": -0.4789,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 20,
+            "feature_name": "EF-TTE",
+            "threshold": -0.4137,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 5
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 22,
+              "feature_name": "DM",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0769,
+                "n_samples": 13
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 2
+              },
+              "n_samples": 15
+            },
+            "n_samples": 20
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 33,
+            "feature_name": "Typical Chest Pain",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 5,
+              "feature_name": "PR",
+              "threshold": 0.6988,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.625,
+                "n_samples": 16
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 5
+              },
+              "n_samples": 21
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 9,
+              "feature_name": "LDL",
+              "threshold": -1.4384,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.875,
+                "n_samples": 32
+              },
+              "n_samples": 33
+            },
+            "n_samples": 54
+          },
+          "n_samples": 74
+        },
+        "n_samples": 120
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 9,
+        "feature_name": "LDL",
+        "threshold": -1.8618,
+        "left": {
+          "is_leaf": true,
+          "prob": 0.0,
+          "n_samples": 3
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 1,
+          "feature_name": "Weight",
+          "threshold": 0.722,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 12,
+            "feature_name": "ESR",
+            "threshold": 0.0378,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 33,
+              "feature_name": "Typical Chest Pain",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.3077,
+                "n_samples": 26
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.7778,
+                "n_samples": 27
+              },
+              "n_samples": 53
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 19,
+              "feature_name": "PLT",
+              "threshold": -0.6754,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 8
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 29
+              },
+              "n_samples": 37
+            },
+            "n_samples": 90
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 14,
+            "feature_name": "K",
+            "threshold": -0.9347,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 10,
+              "feature_name": "HDL",
+              "threshold": -0.0008,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 4
+              },
+              "n_samples": 6
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 50,
+              "feature_name": "Region RWMA",
+              "threshold": 0.25,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 3
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 20
+              },
+              "n_samples": 23
+            },
+            "n_samples": 29
+          },
+          "n_samples": 119
+        },
+        "n_samples": 122
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 20,
+      "feature_name": "EF-TTE",
+      "threshold": -0.2054,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 18,
+        "feature_name": "Neut",
+        "threshold": 1.005,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 11,
+          "feature_name": "BUN",
+          "threshold": -0.8177,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 10,
+            "feature_name": "HDL",
+            "threshold": -0.3318,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 5
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 23,
+              "feature_name": "HTN",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 5
+              },
+              "n_samples": 7
+            },
+            "n_samples": 12
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 10,
+            "feature_name": "HDL",
+            "threshold": -0.1663,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 50
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 14,
+              "feature_name": "K",
+              "threshold": 0.2727,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 21
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 10
+              },
+              "n_samples": 31
+            },
+            "n_samples": 81
+          },
+          "n_samples": 93
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 34,
+          "feature_name": "Dyspnea",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 8,
+            "feature_name": "TG",
+            "threshold": -0.7293,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 2
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 6
+            },
+            "n_samples": 8
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 6
+          },
+          "n_samples": 14
+        },
+        "n_samples": 107
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 33,
+        "feature_name": "Typical Chest Pain",
+        "threshold": 0.5,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.25,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 44,
+            "feature_name": "Q Wave",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 2,
+              "feature_name": "Length",
+              "threshold": 1.168,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0196,
+                "n_samples": 51
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 52
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "n_samples": 53
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 19,
+            "feature_name": "PLT",
+            "threshold": 0.476,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": 0.2067,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0714,
+                "n_samples": 14
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8,
+                "n_samples": 5
+              },
+              "n_samples": 19
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 9,
+              "feature_name": "LDL",
+              "threshold": 0.0887,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 3
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 8
+              },
+              "n_samples": 11
+            },
+            "n_samples": 30
+          },
+          "n_samples": 83
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 13,
+          "feature_name": "HB",
+          "threshold": 0.6022,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 10,
+            "feature_name": "HDL",
+            "threshold": 2.0407,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 23,
+              "feature_name": "HTN",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5556,
+                "n_samples": 9
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.963,
+                "n_samples": 27
+              },
+              "n_samples": 36
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.25,
+              "n_samples": 4
+            },
+            "n_samples": 40
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 11,
+            "feature_name": "BUN",
+            "threshold": 0.9484,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.6,
+              "n_samples": 5
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 7
+            },
+            "n_samples": 12
+          },
+          "n_samples": 52
+        },
+        "n_samples": 135
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 37,
+      "feature_name": "Exertional CP",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 20,
+        "feature_name": "EF-TTE",
+        "threshold": -0.9866,
+        "left": {
+          "is_leaf": true,
+          "prob": 1.0,
+          "n_samples": 20
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 36,
+          "feature_name": "Nonanginal",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 50,
+            "feature_name": "Region RWMA",
+            "threshold": 0.25,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 13,
+              "feature_name": "HB",
+              "threshold": 0.4072,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 28
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.2,
+                "n_samples": 5
+              },
+              "n_samples": 33
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 19,
+              "feature_name": "PLT",
+              "threshold": 0.506,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.6562,
+                "n_samples": 32
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9231,
+                "n_samples": 13
+              },
+              "n_samples": 45
+            },
+            "n_samples": 78
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 33
+          },
+          "n_samples": 111
+        },
+        "n_samples": 131
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 36,
+        "feature_name": "Nonanginal",
+        "threshold": 0.5,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 4,
+          "feature_name": "BP",
+          "threshold": -0.6584,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 18
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 19,
+            "feature_name": "PLT",
+            "threshold": -0.7054,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": -0.8912,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 19
+              },
+              "n_samples": 20
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 16,
+              "feature_name": "WBC",
+              "threshold": 1.6116,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.6792,
+                "n_samples": 53
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "n_samples": 55
+            },
+            "n_samples": 75
+          },
+          "n_samples": 93
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 11,
+          "feature_name": "BUN",
+          "threshold": 0.9484,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 40,
+            "feature_name": "Weak Peripheral Pulse",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": 0.9667,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 11
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 12
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "n_samples": 13
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 5
+          },
+          "n_samples": 18
+        },
+        "n_samples": 111
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 46,
+      "feature_name": "St Depression",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 50,
+        "feature_name": "Region RWMA",
+        "threshold": 0.25,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": -0.1533,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 20,
+            "feature_name": "EF-TTE",
+            "threshold": -0.3096,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 11
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "n_samples": 12
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 26,
+            "feature_name": "FH",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 47
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 14,
+              "feature_name": "K",
+              "threshold": -0.4659,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 4
+              },
+              "n_samples": 6
+            },
+            "n_samples": 53
+          },
+          "n_samples": 65
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 3,
+          "feature_name": "BMI",
+          "threshold": -1.9416,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 2
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 27,
+            "feature_name": "Obesity",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 33,
+              "feature_name": "Typical Chest Pain",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5161,
+                "n_samples": 31
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8163,
+                "n_samples": 49
+              },
+              "n_samples": 80
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 15
+            },
+            "n_samples": 95
+          },
+          "n_samples": 97
+        },
+        "n_samples": 162
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 12,
+        "feature_name": "ESR",
+        "threshold": 0.84,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 8,
+          "feature_name": "TG",
+          "threshold": -1.8042,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 2
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 9,
+            "feature_name": "LDL",
+            "threshold": -0.3649,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 15,
+              "feature_name": "Na",
+              "threshold": 0.7812,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2857,
+                "n_samples": 14
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 3
+              },
+              "n_samples": 17
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 8,
+              "feature_name": "TG",
+              "threshold": -1.571,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9167,
+                "n_samples": 36
+              },
+              "n_samples": 37
+            },
+            "n_samples": 54
+          },
+          "n_samples": 56
+        },
+        "right": {
+          "is_leaf": true,
+          "prob": 1.0,
+          "n_samples": 24
+        },
+        "n_samples": 80
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 12,
+      "feature_name": "ESR",
+      "threshold": -0.7223,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 5,
+        "feature_name": "PR",
+        "threshold": 0.1089,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.25,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 51,
+            "feature_name": "VHD",
+            "threshold": 0.33,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 15
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "n_samples": 16
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 5,
+            "feature_name": "PR",
+            "threshold": 0.0016,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 9,
+              "feature_name": "LDL",
+              "threshold": -1.7862,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9286,
+                "n_samples": 14
+              },
+              "n_samples": 15
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.3333,
+              "n_samples": 3
+            },
+            "n_samples": 18
+          },
+          "n_samples": 34
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 4,
+          "feature_name": "BP",
+          "threshold": 0.7676,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 6,
+            "feature_name": "FBS",
+            "threshold": 0.9411,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 29
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.5,
+              "n_samples": 2
+            },
+            "n_samples": 31
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.3333,
+            "n_samples": 3
+          },
+          "n_samples": 34
+        },
+        "n_samples": 68
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 32,
+        "feature_name": "Function Class",
+        "threshold": 0.875,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 5,
+          "feature_name": "PR",
+          "threshold": 0.0016,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 11,
+            "feature_name": "BUN",
+            "threshold": -1.6026,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.3333,
+              "n_samples": 3
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 5,
+              "feature_name": "PR",
+              "threshold": -0.3738,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8421,
+                "n_samples": 38
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 21
+              },
+              "n_samples": 59
+            },
+            "n_samples": 62
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 7,
+            "feature_name": "CR",
+            "threshold": 0.5775,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 38,
+              "feature_name": "LowTH Ang",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.4333,
+                "n_samples": 30
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9,
+                "n_samples": 10
+              },
+              "n_samples": 40
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 14
+            },
+            "n_samples": 54
+          },
+          "n_samples": 116
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.25,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 0,
+            "feature_name": "Age",
+            "threshold": 0.0608,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 27,
+              "feature_name": "Obesity",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 21
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.1429,
+                "n_samples": 7
+              },
+              "n_samples": 28
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.5,
+              "n_samples": 4
+            },
+            "n_samples": 32
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 9,
+            "feature_name": "LDL",
+            "threshold": -1.8316,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 4
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 30,
+              "feature_name": "Airway disease",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.9,
+                "n_samples": 20
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "n_samples": 22
+            },
+            "n_samples": 26
+          },
+          "n_samples": 58
+        },
+        "n_samples": 174
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 50,
+      "feature_name": "Region RWMA",
+      "threshold": 0.25,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 9,
+        "feature_name": "LDL",
+        "threshold": 1.1319,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": -0.1533,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 9,
+            "feature_name": "LDL",
+            "threshold": -0.4405,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 5
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 25,
+              "feature_name": "Ex-Smoker",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 6
+            },
+            "n_samples": 11
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 9,
+            "feature_name": "LDL",
+            "threshold": 0.633,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 51,
+              "feature_name": "VHD",
+              "threshold": 0.165,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 43
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.1429,
+                "n_samples": 21
+              },
+              "n_samples": 64
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.5,
+              "n_samples": 2
+            },
+            "n_samples": 66
+          },
+          "n_samples": 77
+        },
+        "right": {
+          "is_leaf": true,
+          "prob": 1.0,
+          "n_samples": 2
+        },
+        "n_samples": 79
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 2,
+        "feature_name": "Length",
+        "threshold": 0.7322,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 18,
+          "feature_name": "Neut",
+          "threshold": -2.4349,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 3
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 35,
+            "feature_name": "Atypical",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 15,
+              "feature_name": "Na",
+              "threshold": -2.2705,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.25,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9216,
+                "n_samples": 102
+              },
+              "n_samples": 106
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 3,
+              "feature_name": "BMI",
+              "threshold": -0.9207,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 3
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8462,
+                "n_samples": 13
+              },
+              "n_samples": 16
+            },
+            "n_samples": 122
+          },
+          "n_samples": 125
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 19,
+          "feature_name": "PLT",
+          "threshold": -1.6064,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 3
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 45,
+            "feature_name": "St Elevation",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 22,
+              "feature_name": "DM",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.3636,
+                "n_samples": 11
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8095,
+                "n_samples": 21
+              },
+              "n_samples": 32
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 3
+            },
+            "n_samples": 35
+          },
+          "n_samples": 38
+        },
+        "n_samples": 163
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 16,
+      "feature_name": "WBC",
+      "threshold": -0.075,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 20,
+        "feature_name": "EF-TTE",
+        "threshold": 0.2112,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 9,
+          "feature_name": "LDL",
+          "threshold": -0.7732,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 3,
+            "feature_name": "BMI",
+            "threshold": -0.2745,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 7,
+              "feature_name": "CR",
+              "threshold": -0.0387,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.25,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 5
+              },
+              "n_samples": 9
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 8
+            },
+            "n_samples": 17
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 1,
+            "feature_name": "Weight",
+            "threshold": -0.5321,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 6,
+              "feature_name": "FBS",
+              "threshold": 1.3012,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 18
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8333,
+                "n_samples": 6
+              },
+              "n_samples": 24
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 9,
+              "feature_name": "LDL",
+              "threshold": 0.2399,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 10
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9,
+                "n_samples": 10
+              },
+              "n_samples": 20
+            },
+            "n_samples": 44
+          },
+          "n_samples": 61
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 35,
+          "feature_name": "Atypical",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 18,
+            "feature_name": "Neut",
+            "threshold": 0.0607,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 37,
+              "feature_name": "Exertional CP",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.1875,
+                "n_samples": 16
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9231,
+                "n_samples": 13
+              },
+              "n_samples": 29
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 4,
+              "feature_name": "BP",
+              "threshold": 1.0329,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 17
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6,
+                "n_samples": 5
+              },
+              "n_samples": 22
+            },
+            "n_samples": 51
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 16
+          },
+          "n_samples": 67
+        },
+        "n_samples": 128
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 8,
+        "feature_name": "TG",
+        "threshold": 0.9844,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": -0.1012,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 15,
+            "feature_name": "Na",
+            "threshold": -0.0218,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 0,
+              "feature_name": "Age",
+              "threshold": 0.7136,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8182,
+                "n_samples": 11
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.1667,
+                "n_samples": 6
+              },
+              "n_samples": 17
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": 0.7522,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 24
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 3
+              },
+              "n_samples": 27
+            },
+            "n_samples": 44
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 50,
+            "feature_name": "Region RWMA",
+            "threshold": 0.25,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 0,
+              "feature_name": "Age",
+              "threshold": 0.3872,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 10
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8,
+                "n_samples": 5
+              },
+              "n_samples": 15
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 1,
+              "feature_name": "Weight",
+              "threshold": -0.5177,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 12
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9333,
+                "n_samples": 15
+              },
+              "n_samples": 27
+            },
+            "n_samples": 42
+          },
+          "n_samples": 86
+        },
+        "right": {
+          "is_leaf": true,
+          "prob": 1.0,
+          "n_samples": 28
+        },
+        "n_samples": 114
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 36,
+      "feature_name": "Nonanginal",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 8,
+        "feature_name": "TG",
+        "threshold": -0.4352,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 9,
+          "feature_name": "LDL",
+          "threshold": 0.8598,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 33,
+            "feature_name": "Typical Chest Pain",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 15,
+              "feature_name": "Na",
+              "threshold": -0.6643,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 3
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 12
+              },
+              "n_samples": 15
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": -0.4267,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.3,
+                "n_samples": 10
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8889,
+                "n_samples": 9
+              },
+              "n_samples": 19
+            },
+            "n_samples": 34
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 13
+          },
+          "n_samples": 47
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 21,
+          "feature_name": "Sex",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 26,
+            "feature_name": "FH",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 0,
+              "feature_name": "Age",
+              "threshold": 0.6048,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.3889,
+                "n_samples": 18
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8571,
+                "n_samples": 14
+              },
+              "n_samples": 32
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 13,
+              "feature_name": "HB",
+              "threshold": 0.3292,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.9444,
+                "n_samples": 18
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 19
+            },
+            "n_samples": 51
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 50,
+            "feature_name": "Region RWMA",
+            "threshold": 0.25,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 1,
+              "feature_name": "Weight",
+              "threshold": -0.6422,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8889,
+                "n_samples": 9
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.4667,
+                "n_samples": 15
+              },
+              "n_samples": 24
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": -1.6026,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9753,
+                "n_samples": 81
+              },
+              "n_samples": 82
+            },
+            "n_samples": 106
+          },
+          "n_samples": 157
+        },
+        "n_samples": 204
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 50,
+        "feature_name": "Region RWMA",
+        "threshold": 0.25,
+        "left": {
+          "is_leaf": true,
+          "prob": 0.0,
+          "n_samples": 24
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 8,
+          "feature_name": "TG",
+          "threshold": 0.6904,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 27,
+            "feature_name": "Obesity",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 9,
+              "feature_name": "LDL",
+              "threshold": 0.9959,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 7
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 8
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 2
+            },
+            "n_samples": 10
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 4
+          },
+          "n_samples": 14
+        },
+        "n_samples": 38
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 8,
+      "feature_name": "TG",
+      "threshold": -1.936,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 9,
+        "feature_name": "LDL",
+        "threshold": 0.0887,
+        "left": {
+          "is_leaf": true,
+          "prob": 0.0,
+          "n_samples": 16
+        },
+        "right": {
+          "is_leaf": true,
+          "prob": 0.25,
+          "n_samples": 4
+        },
+        "n_samples": 20
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 12,
+        "feature_name": "ESR",
+        "threshold": 0.9667,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 36,
+          "feature_name": "Nonanginal",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 38,
+            "feature_name": "LowTH Ang",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 33,
+              "feature_name": "Typical Chest Pain",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.1724,
+                "n_samples": 29
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.7692,
+                "n_samples": 65
+              },
+              "n_samples": 94
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 0,
+              "feature_name": "Age",
+              "threshold": -1.571,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8103,
+                "n_samples": 58
+              },
+              "n_samples": 60
+            },
+            "n_samples": 154
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 50,
+            "feature_name": "Region RWMA",
+            "threshold": 0.25,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 23
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 10,
+              "feature_name": "HDL",
+              "threshold": 0.6613,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "n_samples": 6
+            },
+            "n_samples": 29
+          },
+          "n_samples": 183
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 12,
+          "feature_name": "ESR",
+          "threshold": 2.318,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 36
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.3333,
+            "n_samples": 3
+          },
+          "n_samples": 39
+        },
+        "n_samples": 222
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 20,
+      "feature_name": "EF-TTE",
+      "threshold": -0.3096,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 19,
+        "feature_name": "PLT",
+        "threshold": 0.0655,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 16,
+          "feature_name": "WBC",
+          "threshold": -0.0733,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 6,
+            "feature_name": "FBS",
+            "threshold": 0.4782,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": 1.2427,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.125,
+                "n_samples": 8
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 9
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 2
+            },
+            "n_samples": 11
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 1,
+            "feature_name": "Weight",
+            "threshold": 0.5401,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 39,
+              "feature_name": "Edema",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8824,
+                "n_samples": 17
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "n_samples": 19
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 9
+            },
+            "n_samples": 28
+          },
+          "n_samples": 39
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 15,
+          "feature_name": "Na",
+          "threshold": -0.3431,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 24,
+            "feature_name": "Current Smoker",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 12
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 2
+            },
+            "n_samples": 14
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 33
+          },
+          "n_samples": 47
+        },
+        "n_samples": 86
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 8,
+        "feature_name": "TG",
+        "threshold": 0.0515,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.25,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 34,
+            "feature_name": "Dyspnea",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 24,
+              "feature_name": "Current Smoker",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 39
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.1667,
+                "n_samples": 6
+              },
+              "n_samples": 45
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 0,
+              "feature_name": "Age",
+              "threshold": -0.4831,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 6
+            },
+            "n_samples": 51
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 8,
+            "feature_name": "TG",
+            "threshold": -1.8143,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 2
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": -0.3423,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.3077,
+                "n_samples": 13
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.7895,
+                "n_samples": 19
+              },
+              "n_samples": 32
+            },
+            "n_samples": 34
+          },
+          "n_samples": 85
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 36,
+          "feature_name": "Nonanginal",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 40,
+            "feature_name": "Weak Peripheral Pulse",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 30,
+              "feature_name": "Airway disease",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8367,
+                "n_samples": 49
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.2,
+                "n_samples": 5
+              },
+              "n_samples": 54
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 4
+            },
+            "n_samples": 58
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 48,
+            "feature_name": "LVH",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 16,
+              "feature_name": "WBC",
+              "threshold": -0.1011,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 6
+              },
+              "n_samples": 11
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 2
+            },
+            "n_samples": 13
+          },
+          "n_samples": 71
+        },
+        "n_samples": 156
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 20,
+      "feature_name": "EF-TTE",
+      "threshold": -0.1012,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 0,
+        "feature_name": "Age",
+        "threshold": -1.4622,
+        "left": {
+          "is_leaf": true,
+          "prob": 0.0,
+          "n_samples": 1
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 15,
+          "feature_name": "Na",
+          "threshold": 0.2994,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 39,
+            "feature_name": "Edema",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 51,
+              "feature_name": "VHD",
+              "threshold": 0.495,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 46
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9,
+                "n_samples": 10
+              },
+              "n_samples": 56
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.8,
+              "n_samples": 5
+            },
+            "n_samples": 61
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 5,
+            "feature_name": "PR",
+            "threshold": -1.3928,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 18,
+              "feature_name": "Neut",
+              "threshold": -0.6138,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "n_samples": 6
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 45,
+              "feature_name": "St Elevation",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.9032,
+                "n_samples": 31
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 32
+            },
+            "n_samples": 38
+          },
+          "n_samples": 99
+        },
+        "n_samples": 100
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 50,
+        "feature_name": "Region RWMA",
+        "threshold": 0.25,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 30,
+          "feature_name": "Airway disease",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 20,
+            "feature_name": "EF-TTE",
+            "threshold": 1.2528,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 53
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 16,
+              "feature_name": "WBC",
+              "threshold": -0.0413,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 10
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 2
+              },
+              "n_samples": 12
+            },
+            "n_samples": 65
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 5,
+            "feature_name": "PR",
+            "threshold": 0.1625,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 3
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.2,
+              "n_samples": 5
+            },
+            "n_samples": 8
+          },
+          "n_samples": 73
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 46,
+          "feature_name": "St Depression",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 14,
+            "feature_name": "K",
+            "threshold": -0.2386,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 47,
+              "feature_name": "Tinversion",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 7
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 2
+              },
+              "n_samples": 9
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 3,
+              "feature_name": "BMI",
+              "threshold": 0.3229,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8148,
+                "n_samples": 27
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.2727,
+                "n_samples": 11
+              },
+              "n_samples": 38
+            },
+            "n_samples": 47
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 12,
+            "feature_name": "ESR",
+            "threshold": -0.849,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 21
+            },
+            "n_samples": 22
+          },
+          "n_samples": 69
+        },
+        "n_samples": 142
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 50,
+      "feature_name": "Region RWMA",
+      "threshold": 0.25,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 38,
+        "feature_name": "LowTH Ang",
+        "threshold": 0.5,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": -2.1323,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 3
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 16,
+            "feature_name": "WBC",
+            "threshold": 0.585,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 60
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 19,
+              "feature_name": "PLT",
+              "threshold": -1.5264,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 3
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.2222,
+                "n_samples": 18
+              },
+              "n_samples": 21
+            },
+            "n_samples": 81
+          },
+          "n_samples": 84
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 36,
+          "feature_name": "Nonanginal",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 34,
+            "feature_name": "Dyspnea",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.6,
+              "n_samples": 5
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 8
+            },
+            "n_samples": 13
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 3
+          },
+          "n_samples": 16
+        },
+        "n_samples": 100
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 9,
+        "feature_name": "LDL",
+        "threshold": -1.9072,
+        "left": {
+          "is_leaf": true,
+          "prob": 0.25,
+          "n_samples": 4
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 35,
+          "feature_name": "Atypical",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 16,
+            "feature_name": "WBC",
+            "threshold": 0.805,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 34,
+              "feature_name": "Dyspnea",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.9423,
+                "n_samples": 52
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6111,
+                "n_samples": 36
+              },
+              "n_samples": 88
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 33
+            },
+            "n_samples": 121
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 46,
+            "feature_name": "St Depression",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 32,
+              "feature_name": "Function Class",
+              "threshold": 0.875,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 6
+              },
+              "n_samples": 10
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 4,
+              "feature_name": "BP",
+              "threshold": 1.0661,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 6
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 7
+            },
+            "n_samples": 17
+          },
+          "n_samples": 138
+        },
+        "n_samples": 142
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 21,
+      "feature_name": "Sex",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 0,
+        "feature_name": "Age",
+        "threshold": -0.048,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 26,
+          "feature_name": "FH",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 48,
+            "feature_name": "LVH",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 38
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 3
+            },
+            "n_samples": 41
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.75,
+            "n_samples": 4
+          },
+          "n_samples": 45
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 8,
+          "feature_name": "TG",
+          "threshold": -0.8814,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 12,
+            "feature_name": "ESR",
+            "threshold": -0.8068,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 4
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.8,
+              "n_samples": 5
+            },
+            "n_samples": 9
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 2,
+            "feature_name": "Length",
+            "threshold": -0.3781,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 31,
+              "feature_name": "Thyroid Disease",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.4,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 2
+              },
+              "n_samples": 7
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 13
+            },
+            "n_samples": 20
+          },
+          "n_samples": 29
+        },
+        "n_samples": 74
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 8,
+        "feature_name": "TG",
+        "threshold": -0.4758,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 8,
+          "feature_name": "TG",
+          "threshold": -1.642,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 38,
+            "feature_name": "LowTH Ang",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 11
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "n_samples": 12
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 5,
+            "feature_name": "PR",
+            "threshold": 0.2161,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 50,
+              "feature_name": "Region RWMA",
+              "threshold": 0.25,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 12
+              },
+              "n_samples": 17
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": 1.2623,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 6
+            },
+            "n_samples": 23
+          },
+          "n_samples": 35
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 9,
+          "feature_name": "LDL",
+          "threshold": 0.0887,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 1,
+            "feature_name": "Weight",
+            "threshold": -0.6709,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 33,
+              "feature_name": "Typical Chest Pain",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8333,
+                "n_samples": 6
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 13
+              },
+              "n_samples": 19
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 50,
+              "feature_name": "Region RWMA",
+              "threshold": 0.25,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2105,
+                "n_samples": 19
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.875,
+                "n_samples": 24
+              },
+              "n_samples": 43
+            },
+            "n_samples": 62
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 45,
+            "feature_name": "St Elevation",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 2,
+              "feature_name": "Length",
+              "threshold": -1.1959,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8971,
+                "n_samples": 68
+              },
+              "n_samples": 69
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 2
+            },
+            "n_samples": 71
+          },
+          "n_samples": 133
+        },
+        "n_samples": 168
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 37,
+      "feature_name": "Exertional CP",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 12,
+        "feature_name": "ESR",
+        "threshold": 0.7134,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 46,
+          "feature_name": "St Depression",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 38,
+            "feature_name": "LowTH Ang",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 8,
+              "feature_name": "TG",
+              "threshold": 1.0453,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.169,
+                "n_samples": 71
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 3
+              },
+              "n_samples": 74
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 1,
+              "feature_name": "Weight",
+              "threshold": -0.7044,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.25,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 11
+              },
+              "n_samples": 15
+            },
+            "n_samples": 89
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 15,
+            "feature_name": "Na",
+            "threshold": -0.3431,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 7
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 50,
+              "feature_name": "Region RWMA",
+              "threshold": 0.25,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.7778,
+                "n_samples": 9
+              },
+              "n_samples": 14
+            },
+            "n_samples": 21
+          },
+          "n_samples": 110
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.25,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.3333,
+            "n_samples": 3
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 40,
+            "feature_name": "Weak Peripheral Pulse",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 12
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "n_samples": 13
+          },
+          "n_samples": 16
+        },
+        "n_samples": 126
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 9,
+        "feature_name": "LDL",
+        "threshold": 0.3003,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.625,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 10,
+            "feature_name": "HDL",
+            "threshold": -0.9388,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 8
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 7,
+              "feature_name": "CR",
+              "threshold": 0.7359,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.7097,
+                "n_samples": 31
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 7
+              },
+              "n_samples": 38
+            },
+            "n_samples": 46
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 5,
+            "feature_name": "PR",
+            "threshold": 0.2161,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 15
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.75,
+              "n_samples": 4
+            },
+            "n_samples": 19
+          },
+          "n_samples": 65
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 49,
+          "feature_name": "Poor R Progression",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 38
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 16,
+            "feature_name": "WBC",
+            "threshold": 0.9471,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 0,
+              "feature_name": "Age",
+              "threshold": 0.2784,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 3
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 4
+              },
+              "n_samples": 7
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 6
+            },
+            "n_samples": 13
+          },
+          "n_samples": 51
+        },
+        "n_samples": 116
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 36,
+      "feature_name": "Nonanginal",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 20,
+        "feature_name": "EF-TTE",
+        "threshold": -0.1012,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.875,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 45,
+            "feature_name": "St Elevation",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 51,
+              "feature_name": "VHD",
+              "threshold": 0.165,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.913,
+                "n_samples": 23
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 20
+              },
+              "n_samples": 43
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.6667,
+              "n_samples": 3
+            },
+            "n_samples": 46
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 18,
+            "feature_name": "Neut",
+            "threshold": -0.2091,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 9,
+              "feature_name": "LDL",
+              "threshold": 0.6179,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 6
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 21,
+              "feature_name": "Sex",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 6
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6842,
+                "n_samples": 19
+              },
+              "n_samples": 25
+            },
+            "n_samples": 31
+          },
+          "n_samples": 77
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 2,
+          "feature_name": "Length",
+          "threshold": -0.593,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 9,
+            "feature_name": "LDL",
+            "threshold": 0.7086,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 49,
+              "feature_name": "Poor R Progression",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0476,
+                "n_samples": 21
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 22
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 5
+            },
+            "n_samples": 27
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 10,
+            "feature_name": "HDL",
+            "threshold": 0.1648,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": -0.9158,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5714,
+                "n_samples": 14
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8696,
+                "n_samples": 23
+              },
+              "n_samples": 37
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 23,
+              "feature_name": "HTN",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2857,
+                "n_samples": 21
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6364,
+                "n_samples": 22
+              },
+              "n_samples": 43
+            },
+            "n_samples": 80
+          },
+          "n_samples": 107
+        },
+        "n_samples": 184
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 20,
+        "feature_name": "EF-TTE",
+        "threshold": -0.1533,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 2,
+          "feature_name": "Length",
+          "threshold": 0.6248,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 8
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 3
+          },
+          "n_samples": 11
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 9,
+          "feature_name": "LDL",
+          "threshold": 1.2227,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 50,
+            "feature_name": "Region RWMA",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 40
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.2,
+              "n_samples": 5
+            },
+            "n_samples": 45
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 2
+          },
+          "n_samples": 47
+        },
+        "n_samples": 58
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 50,
+      "feature_name": "Region RWMA",
+      "threshold": 0.25,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 18,
+        "feature_name": "Neut",
+        "threshold": -2.3675,
+        "left": {
+          "is_leaf": true,
+          "prob": 1.0,
+          "n_samples": 2
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 24,
+          "feature_name": "Current Smoker",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 0,
+            "feature_name": "Age",
+            "threshold": 2.019,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 19,
+              "feature_name": "PLT",
+              "threshold": -0.4751,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2727,
+                "n_samples": 11
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0208,
+                "n_samples": 48
+              },
+              "n_samples": 59
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "n_samples": 60
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 20,
+            "feature_name": "EF-TTE",
+            "threshold": -0.2575,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 6
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": 0.5445,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.1818,
+                "n_samples": 11
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 2
+              },
+              "n_samples": 13
+            },
+            "n_samples": 19
+          },
+          "n_samples": 79
+        },
+        "n_samples": 81
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 8,
+        "feature_name": "TG",
+        "threshold": -0.4454,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 6,
+          "feature_name": "FBS",
+          "threshold": -1.3048,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 7
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 20,
+            "feature_name": "EF-TTE",
+            "threshold": 0.6799,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 5,
+              "feature_name": "PR",
+              "threshold": 1.1815,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8929,
+                "n_samples": 28
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "n_samples": 30
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.2,
+              "n_samples": 5
+            },
+            "n_samples": 35
+          },
+          "n_samples": 42
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 5,
+          "feature_name": "PR",
+          "threshold": 2.415,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 14,
+            "feature_name": "K",
+            "threshold": 1.7642,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 16,
+              "feature_name": "WBC",
+              "threshold": 0.5201,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.7627,
+                "n_samples": 59
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9649,
+                "n_samples": 57
+              },
+              "n_samples": 116
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 2
+            },
+            "n_samples": 118
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 1
+          },
+          "n_samples": 119
+        },
+        "n_samples": 161
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 20,
+      "feature_name": "EF-TTE",
+      "threshold": -0.1012,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 15,
+        "feature_name": "Na",
+        "threshold": 0.6206,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 33,
+          "feature_name": "Typical Chest Pain",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 6,
+            "feature_name": "FBS",
+            "threshold": -1.1505,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 4
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 35,
+              "feature_name": "Atypical",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 9
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.3333,
+                "n_samples": 6
+              },
+              "n_samples": 15
+            },
+            "n_samples": 19
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 23,
+            "feature_name": "HTN",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 14,
+              "feature_name": "K",
+              "threshold": 1.6222,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.9048,
+                "n_samples": 21
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 22
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 14,
+              "feature_name": "K",
+              "threshold": 0.0028,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8947,
+                "n_samples": 19
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 18
+              },
+              "n_samples": 37
+            },
+            "n_samples": 59
+          },
+          "n_samples": 78
+        },
+        "right": {
+          "is_leaf": true,
+          "prob": 1.0,
+          "n_samples": 27
+        },
+        "n_samples": 105
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 50,
+        "feature_name": "Region RWMA",
+        "threshold": 0.25,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 10,
+          "feature_name": "HDL",
+          "threshold": -1.8216,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 2
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 9,
+            "feature_name": "LDL",
+            "threshold": 1.9031,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 30,
+              "feature_name": "Airway disease",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.082,
+                "n_samples": 61
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 1
+              },
+              "n_samples": 62
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "n_samples": 63
+          },
+          "n_samples": 65
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 16,
+          "feature_name": "WBC",
+          "threshold": -0.5818,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 35,
+            "feature_name": "Atypical",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 3,
+              "feature_name": "BMI",
+              "threshold": 0.2013,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 7
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.25,
+                "n_samples": 4
+              },
+              "n_samples": 11
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 7
+            },
+            "n_samples": 18
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 13,
+            "feature_name": "HB",
+            "threshold": 1.5772,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 23,
+              "feature_name": "HTN",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.6842,
+                "n_samples": 19
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9412,
+                "n_samples": 34
+              },
+              "n_samples": 53
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "n_samples": 54
+          },
+          "n_samples": 72
+        },
+        "n_samples": 137
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 50,
+      "feature_name": "Region RWMA",
+      "threshold": 0.25,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 21,
+        "feature_name": "Sex",
+        "threshold": 0.5,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 19,
+          "feature_name": "PLT",
+          "threshold": -0.6854,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 18,
+            "feature_name": "Neut",
+            "threshold": 1.0724,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 7
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "n_samples": 8
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 22
+          },
+          "n_samples": 30
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 18,
+          "feature_name": "Neut",
+          "threshold": 1.005,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 0,
+            "feature_name": "Age",
+            "threshold": -0.9727,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 12
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 18,
+              "feature_name": "Neut",
+              "threshold": -0.1416,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.75,
+                "n_samples": 24
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.3333,
+                "n_samples": 21
+              },
+              "n_samples": 45
+            },
+            "n_samples": 57
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 8
+          },
+          "n_samples": 65
+        },
+        "n_samples": 95
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 18,
+        "feature_name": "Neut",
+        "threshold": -0.7487,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.625,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 11
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 12,
+            "feature_name": "ESR",
+            "threshold": 0.46,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 9
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 15,
+              "feature_name": "Na",
+              "threshold": 0.2994,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 8
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 4
+              },
+              "n_samples": 12
+            },
+            "n_samples": 21
+          },
+          "n_samples": 32
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 11,
+          "feature_name": "BUN",
+          "threshold": -0.6215,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 8,
+            "feature_name": "TG",
+            "threshold": -0.1209,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 19,
+              "feature_name": "PLT",
+              "threshold": -0.1047,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 13
+              },
+              "n_samples": 14
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 44,
+              "feature_name": "Q Wave",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2667,
+                "n_samples": 15
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 8
+              },
+              "n_samples": 23
+            },
+            "n_samples": 37
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 22,
+            "feature_name": "DM",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 8,
+              "feature_name": "TG",
+              "threshold": -0.1716,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5833,
+                "n_samples": 12
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9189,
+                "n_samples": 37
+              },
+              "n_samples": 49
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 29
+            },
+            "n_samples": 78
+          },
+          "n_samples": 115
+        },
+        "n_samples": 147
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 46,
+      "feature_name": "St Depression",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 20,
+        "feature_name": "EF-TTE",
+        "threshold": -0.1012,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 11,
+          "feature_name": "BUN",
+          "threshold": 1.6352,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 1,
+            "feature_name": "Weight",
+            "threshold": -0.8767,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 8,
+              "feature_name": "TG",
+              "threshold": -0.8206,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9167,
+                "n_samples": 12
+              },
+              "n_samples": 17
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": 0.0378,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8571,
+                "n_samples": 21
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 22
+              },
+              "n_samples": 43
+            },
+            "n_samples": 60
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 4
+          },
+          "n_samples": 64
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 33,
+          "feature_name": "Typical Chest Pain",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 8,
+            "feature_name": "TG",
+            "threshold": 0.5484,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 36,
+              "feature_name": "Nonanginal",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.069,
+                "n_samples": 29
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 31
+              },
+              "n_samples": 60
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 12,
+              "feature_name": "ESR",
+              "threshold": -0.469,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8,
+                "n_samples": 5
+              },
+              "n_samples": 9
+            },
+            "n_samples": 69
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 36,
+            "feature_name": "Nonanginal",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 19,
+              "feature_name": "PLT",
+              "threshold": 1.2569,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.7,
+                "n_samples": 20
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 4
+              },
+              "n_samples": 24
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 7
+            },
+            "n_samples": 31
+          },
+          "n_samples": 100
+        },
+        "n_samples": 164
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 16,
+        "feature_name": "WBC",
+        "threshold": -0.4338,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 10,
+          "feature_name": "HDL",
+          "threshold": -0.0008,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 19,
+            "feature_name": "PLT",
+            "threshold": -1.266,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 1,
+              "feature_name": "Weight",
+              "threshold": -0.5656,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 2
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 7
+              },
+              "n_samples": 9
+            },
+            "n_samples": 10
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 3,
+            "feature_name": "BMI",
+            "threshold": -1.1677,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 8
+            },
+            "n_samples": 9
+          },
+          "n_samples": 19
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 4,
+          "feature_name": "BP",
+          "threshold": 0.237,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 8,
+            "feature_name": "TG",
+            "threshold": 0.5281,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 50,
+              "feature_name": "Region RWMA",
+              "threshold": 0.25,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.25,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.95,
+                "n_samples": 20
+              },
+              "n_samples": 24
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 3,
+              "feature_name": "BMI",
+              "threshold": -0.3281,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 3
+              },
+              "n_samples": 7
+            },
+            "n_samples": 31
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 28
+          },
+          "n_samples": 59
+        },
+        "n_samples": 78
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 36,
+      "feature_name": "Nonanginal",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 50,
+        "feature_name": "Region RWMA",
+        "threshold": 0.25,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": 0.3154,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 0,
+            "feature_name": "Age",
+            "threshold": -1.0815,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 5
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 14
+            },
+            "n_samples": 19
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 20,
+            "feature_name": "EF-TTE",
+            "threshold": 1.2528,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 17,
+              "feature_name": "Lymph",
+              "threshold": 0.1364,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 16
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 8
+              },
+              "n_samples": 24
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 9,
+              "feature_name": "LDL",
+              "threshold": -1.0907,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.875,
+                "n_samples": 8
+              },
+              "n_samples": 10
+            },
+            "n_samples": 34
+          },
+          "n_samples": 53
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": -0.2054,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 16,
+            "feature_name": "WBC",
+            "threshold": 2.1657,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 32,
+              "feature_name": "Function Class",
+              "threshold": 0.625,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.7714,
+                "n_samples": 35
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9302,
+                "n_samples": 43
+              },
+              "n_samples": 78
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "n_samples": 79
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 13,
+            "feature_name": "HB",
+            "threshold": 0.1342,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 4,
+              "feature_name": "BP",
+              "threshold": -0.2273,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.7333,
+                "n_samples": 15
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.2273,
+                "n_samples": 22
+              },
+              "n_samples": 37
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 49,
+              "feature_name": "Poor R Progression",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8846,
+                "n_samples": 26
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.3333,
+                "n_samples": 3
+              },
+              "n_samples": 29
+            },
+            "n_samples": 66
+          },
+          "n_samples": 145
+        },
+        "n_samples": 198
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 50,
+        "feature_name": "Region RWMA",
+        "threshold": 0.25,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": 0.1071,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 13,
+            "feature_name": "HB",
+            "threshold": -0.9579,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 7
+            },
+            "n_samples": 8
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 32
+          },
+          "n_samples": 40
+        },
+        "right": {
+          "is_leaf": true,
+          "prob": 0.75,
+          "n_samples": 4
+        },
+        "n_samples": 44
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 38,
+      "feature_name": "LowTH Ang",
+      "threshold": 0.5,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 6,
+        "feature_name": "FBS",
+        "threshold": -0.5333,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 12,
+          "feature_name": "ESR",
+          "threshold": 0.6289,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 29,
+            "feature_name": "CVA",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 8,
+              "feature_name": "TG",
+              "threshold": 0.0312,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 28
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.2778,
+                "n_samples": 18
+              },
+              "n_samples": 46
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 3
+            },
+            "n_samples": 49
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 14,
+            "feature_name": "K",
+            "threshold": -0.3665,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 8
+            },
+            "n_samples": 9
+          },
+          "n_samples": 58
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": 0.6279,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 2,
+            "feature_name": "Length",
+            "threshold": 0.768,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 24,
+              "feature_name": "Current Smoker",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.8182,
+                "n_samples": 33
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 22
+              },
+              "n_samples": 55
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": -0.8177,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.4615,
+                "n_samples": 13
+              },
+              "n_samples": 17
+            },
+            "n_samples": 72
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 33,
+            "feature_name": "Typical Chest Pain",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": 0.1635,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 9
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.25,
+                "n_samples": 4
+              },
+              "n_samples": 13
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 44,
+              "feature_name": "Q Wave",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.3636,
+                "n_samples": 11
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 6
+              },
+              "n_samples": 17
+            },
+            "n_samples": 30
+          },
+          "n_samples": 102
+        },
+        "n_samples": 160
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 19,
+        "feature_name": "PLT",
+        "threshold": -1.6064,
+        "left": {
+          "is_leaf": true,
+          "prob": 0.0,
+          "n_samples": 3
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 40,
+          "feature_name": "Weak Peripheral Pulse",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 20,
+            "feature_name": "EF-TTE",
+            "threshold": 0.6279,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": -1.5045,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 2
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.9444,
+                "n_samples": 54
+              },
+              "n_samples": 56
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 26,
+              "feature_name": "FH",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.7857,
+                "n_samples": 14
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 15
+            },
+            "n_samples": 71
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 32,
+            "feature_name": "Function Class",
+            "threshold": 0.875,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 49,
+              "feature_name": "Poor R Progression",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 6
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 2
+            },
+            "n_samples": 8
+          },
+          "n_samples": 79
+        },
+        "n_samples": 82
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 20,
+      "feature_name": "EF-TTE",
+      "threshold": -0.3096,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 5,
+        "feature_name": "PR",
+        "threshold": 1.396,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 0,
+          "feature_name": "Age",
+          "threshold": -1.4622,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 1
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 2,
+            "feature_name": "Length",
+            "threshold": 0.7322,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 35,
+              "feature_name": "Atypical",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 58
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.7143,
+                "n_samples": 7
+              },
+              "n_samples": 65
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 23,
+              "feature_name": "HTN",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.875,
+                "n_samples": 8
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 10
+              },
+              "n_samples": 18
+            },
+            "n_samples": 83
+          },
+          "n_samples": 84
+        },
+        "right": {
+          "is_leaf": true,
+          "prob": 0.3333,
+          "n_samples": 3
+        },
+        "n_samples": 87
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 33,
+        "feature_name": "Typical Chest Pain",
+        "threshold": 0.5,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 21,
+          "feature_name": "Sex",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 9,
+            "feature_name": "LDL",
+            "threshold": 0.4213,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 29
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.75,
+              "n_samples": 4
+            },
+            "n_samples": 33
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 12,
+            "feature_name": "ESR",
+            "threshold": 0.8823,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 39,
+              "feature_name": "Edema",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2222,
+                "n_samples": 36
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 7
+              },
+              "n_samples": 43
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 40,
+              "feature_name": "Weak Peripheral Pulse",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 11
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 12
+            },
+            "n_samples": 55
+          },
+          "n_samples": 88
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 19,
+          "feature_name": "PLT",
+          "threshold": -0.7655,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 16
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 12,
+            "feature_name": "ESR",
+            "threshold": 0.3756,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 36,
+              "feature_name": "Nonanginal",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.5333,
+                "n_samples": 30
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 7
+              },
+              "n_samples": 37
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 39,
+              "feature_name": "Edema",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.9231,
+                "n_samples": 13
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "n_samples": 14
+            },
+            "n_samples": 51
+          },
+          "n_samples": 67
+        },
+        "n_samples": 155
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 50,
+      "feature_name": "Region RWMA",
+      "threshold": 0.25,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 20,
+        "feature_name": "EF-TTE",
+        "threshold": -0.1012,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 5,
+          "feature_name": "PR",
+          "threshold": -1.2319,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 2
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 19,
+            "feature_name": "PLT",
+            "threshold": 1.2068,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 8
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "n_samples": 9
+          },
+          "n_samples": 11
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 8,
+          "feature_name": "TG",
+          "threshold": 1.7348,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 49,
+            "feature_name": "Poor R Progression",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 10,
+              "feature_name": "HDL",
+              "threshold": -1.6009,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.25,
+                "n_samples": 4
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 57
+              },
+              "n_samples": 61
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 2,
+              "feature_name": "Length",
+              "threshold": 0.5293,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 3
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.75,
+                "n_samples": 4
+              },
+              "n_samples": 7
+            },
+            "n_samples": 68
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 2
+          },
+          "n_samples": 70
+        },
+        "n_samples": 81
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 22,
+        "feature_name": "DM",
+        "threshold": 0.5,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 13,
+          "feature_name": "HB",
+          "threshold": 0.0562,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 40,
+            "feature_name": "Weak Peripheral Pulse",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 20,
+              "feature_name": "EF-TTE",
+              "threshold": -0.1012,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.7143,
+                "n_samples": 21
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.2632,
+                "n_samples": 19
+              },
+              "n_samples": 40
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 6
+            },
+            "n_samples": 46
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 10,
+            "feature_name": "HDL",
+            "threshold": 0.9924,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": 0.3597,
+              "left": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 23
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8667,
+                "n_samples": 15
+              },
+              "n_samples": 38
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 2
+            },
+            "n_samples": 40
+          },
+          "n_samples": 86
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 34,
+          "feature_name": "Dyspnea",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 33
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 25,
+            "feature_name": "Ex-Smoker",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 32,
+              "feature_name": "Function Class",
+              "threshold": 0.625,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.963,
+                "n_samples": 27
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.75,
+                "n_samples": 12
+              },
+              "n_samples": 39
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.6667,
+              "n_samples": 3
+            },
+            "n_samples": 42
+          },
+          "n_samples": 75
+        },
+        "n_samples": 161
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 16,
+      "feature_name": "WBC",
+      "threshold": -0.0198,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 50,
+        "feature_name": "Region RWMA",
+        "threshold": 0.25,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 38,
+          "feature_name": "LowTH Ang",
+          "threshold": 0.5,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 8,
+            "feature_name": "TG",
+            "threshold": 0.6904,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 38
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 22,
+              "feature_name": "DM",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 7
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 3
+              },
+              "n_samples": 10
+            },
+            "n_samples": 48
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 2,
+            "feature_name": "Length",
+            "threshold": 0.0875,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 9,
+              "feature_name": "LDL",
+              "threshold": -0.4859,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 2
+              },
+              "n_samples": 7
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 6
+            },
+            "n_samples": 13
+          },
+          "n_samples": 61
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 11,
+          "feature_name": "BUN",
+          "threshold": -0.6215,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 27,
+            "feature_name": "Obesity",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 44,
+              "feature_name": "Q Wave",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.1538,
+                "n_samples": 13
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 2
+              },
+              "n_samples": 15
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.8,
+              "n_samples": 5
+            },
+            "n_samples": 20
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 17,
+            "feature_name": "Lymph",
+            "threshold": -1.4485,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 1
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 38,
+              "feature_name": "LowTH Ang",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.9048,
+                "n_samples": 21
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6,
+                "n_samples": 10
+              },
+              "n_samples": 31
+            },
+            "n_samples": 32
+          },
+          "n_samples": 52
+        },
+        "n_samples": 113
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 8,
+        "feature_name": "TG",
+        "threshold": -0.4859,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 20,
+          "feature_name": "EF-TTE",
+          "threshold": 0.6279,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 14,
+            "feature_name": "K",
+            "threshold": 0.3864,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 35,
+              "feature_name": "Atypical",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.7778,
+                "n_samples": 9
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "n_samples": 11
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 7
+            },
+            "n_samples": 18
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 14
+          },
+          "n_samples": 32
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 9,
+          "feature_name": "LDL",
+          "threshold": 0.4515,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 16,
+            "feature_name": "WBC",
+            "threshold": -0.0091,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 4
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 50,
+              "feature_name": "Region RWMA",
+              "threshold": 0.25,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.1538,
+                "n_samples": 13
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.8788,
+                "n_samples": 33
+              },
+              "n_samples": 46
+            },
+            "n_samples": 50
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 23,
+            "feature_name": "HTN",
+            "threshold": 0.5,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 14
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 36,
+              "feature_name": "Nonanginal",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.931,
+                "n_samples": 29
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.5,
+                "n_samples": 4
+              },
+              "n_samples": 33
+            },
+            "n_samples": 47
+          },
+          "n_samples": 97
+        },
+        "n_samples": 129
+      },
+      "n_samples": 242
+    },
+    {
+      "is_leaf": false,
+      "feature_index": 16,
+      "feature_name": "WBC",
+      "threshold": -0.9375,
+      "left": {
+        "is_leaf": false,
+        "feature_index": 44,
+        "feature_name": "Q Wave",
+        "threshold": 0.5,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.25,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 18,
+            "feature_name": "Neut",
+            "threshold": -1.8279,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 1
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 19,
+              "feature_name": "PLT",
+              "threshold": -1.0558,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0909,
+                "n_samples": 11
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 27
+              },
+              "n_samples": 38
+            },
+            "n_samples": 39
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 9,
+            "feature_name": "LDL",
+            "threshold": -0.7732,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 5
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 13,
+              "feature_name": "HB",
+              "threshold": -0.4119,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 2
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 10
+              },
+              "n_samples": 12
+            },
+            "n_samples": 17
+          },
+          "n_samples": 56
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 0,
+          "feature_name": "Age",
+          "threshold": -1.3535,
+          "left": {
+            "is_leaf": true,
+            "prob": 0.0,
+            "n_samples": 3
+          },
+          "right": {
+            "is_leaf": true,
+            "prob": 1.0,
+            "n_samples": 7
+          },
+          "n_samples": 10
+        },
+        "n_samples": 66
+      },
+      "right": {
+        "is_leaf": false,
+        "feature_index": 20,
+        "feature_name": "EF-TTE",
+        "threshold": -0.2054,
+        "left": {
+          "is_leaf": false,
+          "feature_index": 11,
+          "feature_name": "BUN",
+          "threshold": -0.0328,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 19,
+            "feature_name": "PLT",
+            "threshold": -0.6754,
+            "left": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 8
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 22,
+              "feature_name": "DM",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.2,
+                "n_samples": 5
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.6667,
+                "n_samples": 12
+              },
+              "n_samples": 17
+            },
+            "n_samples": 25
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 12,
+            "feature_name": "ESR",
+            "threshold": -0.5534,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 2,
+              "feature_name": "Length",
+              "threshold": -0.79,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 1
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 1.0,
+                "n_samples": 9
+              },
+              "n_samples": 10
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 1.0,
+              "n_samples": 30
+            },
+            "n_samples": 40
+          },
+          "n_samples": 65
+        },
+        "right": {
+          "is_leaf": false,
+          "feature_index": 50,
+          "feature_name": "Region RWMA",
+          "threshold": 0.25,
+          "left": {
+            "is_leaf": false,
+            "feature_index": 16,
+            "feature_name": "WBC",
+            "threshold": 1.6521,
+            "left": {
+              "is_leaf": false,
+              "feature_index": 11,
+              "feature_name": "BUN",
+              "threshold": -1.0139,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.0,
+                "n_samples": 15
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.16,
+                "n_samples": 25
+              },
+              "n_samples": 40
+            },
+            "right": {
+              "is_leaf": true,
+              "prob": 0.75,
+              "n_samples": 4
+            },
+            "n_samples": 44
+          },
+          "right": {
+            "is_leaf": false,
+            "feature_index": 19,
+            "feature_name": "PLT",
+            "threshold": -1.6565,
+            "left": {
+              "is_leaf": true,
+              "prob": 0.0,
+              "n_samples": 3
+            },
+            "right": {
+              "is_leaf": false,
+              "feature_index": 29,
+              "feature_name": "CVA",
+              "threshold": 0.5,
+              "left": {
+                "is_leaf": true,
+                "prob": 0.807,
+                "n_samples": 57
+              },
+              "right": {
+                "is_leaf": true,
+                "prob": 0.1429,
+                "n_samples": 7
+              },
+              "n_samples": 64
+            },
+            "n_samples": 67
+          },
+          "n_samples": 111
+        },
+        "n_samples": 176
+      },
+      "n_samples": 242
+    }
+  ],
+  "base_rate": 0.5826446280991735,
+  "feature_importance": [
+    {
+      "feature": "Region RWMA",
+      "importance": 0.0753
+    },
+    {
+      "feature": "EF-TTE",
+      "importance": 0.0665
+    },
+    {
+      "feature": "LDL",
+      "importance": 0.0597
+    },
+    {
+      "feature": "TG",
+      "importance": 0.055
+    },
+    {
+      "feature": "ESR",
+      "importance": 0.0506
+    },
+    {
+      "feature": "PLT",
+      "importance": 0.0408
+    },
+    {
+      "feature": "BUN",
+      "importance": 0.0389
+    },
+    {
+      "feature": "WBC",
+      "importance": 0.0368
+    },
+    {
+      "feature": "Age",
+      "importance": 0.0322
+    },
+    {
+      "feature": "PR",
+      "importance": 0.032
+    },
+    {
+      "feature": "Length",
+      "importance": 0.0294
+    },
+    {
+      "feature": "Nonanginal",
+      "importance": 0.0277
+    },
+    {
+      "feature": "Typical Chest Pain",
+      "importance": 0.0254
+    },
+    {
+      "feature": "HDL",
+      "importance": 0.0252
+    },
+    {
+      "feature": "Neut",
+      "importance": 0.0249
+    },
+    {
+      "feature": "Weight",
+      "importance": 0.0205
+    },
+    {
+      "feature": "K",
+      "importance": 0.0204
+    },
+    {
+      "feature": "Na",
+      "importance": 0.0204
+    },
+    {
+      "feature": "LowTH Ang",
+      "importance": 0.0185
+    },
+    {
+      "feature": "HB",
+      "importance": 0.0182
+    },
+    {
+      "feature": "Atypical",
+      "importance": 0.0165
+    },
+    {
+      "feature": "HTN",
+      "importance": 0.0161
+    },
+    {
+      "feature": "BMI",
+      "importance": 0.016
+    },
+    {
+      "feature": "DM",
+      "importance": 0.014
+    },
+    {
+      "feature": "FBS",
+      "importance": 0.0138
+    },
+    {
+      "feature": "BP",
+      "importance": 0.0137
+    },
+    {
+      "feature": "Sex",
+      "importance": 0.0137
+    },
+    {
+      "feature": "Weak Peripheral Pulse",
+      "importance": 0.0136
+    },
+    {
+      "feature": "St Depression",
+      "importance": 0.0117
+    },
+    {
+      "feature": "Q Wave",
+      "importance": 0.0117
+    },
+    {
+      "feature": "Dyspnea",
+      "importance": 0.0115
+    },
+    {
+      "feature": "Function Class",
+      "importance": 0.0114
+    },
+    {
+      "feature": "Poor R Progression",
+      "importance": 0.0113
+    },
+    {
+      "feature": "Current Smoker",
+      "importance": 0.0095
+    },
+    {
+      "feature": "CR",
+      "importance": 0.0093
+    },
+    {
+      "feature": "FH",
+      "importance": 0.0092
+    },
+    {
+      "feature": "St Elevation",
+      "importance": 0.0092
+    },
+    {
+      "feature": "Obesity",
+      "importance": 0.0091
+    },
+    {
+      "feature": "Airway disease",
+      "importance": 0.0091
+    },
+    {
+      "feature": "Edema",
+      "importance": 0.0091
+    },
+    {
+      "feature": "VHD",
+      "importance": 0.0091
+    },
+    {
+      "feature": "LVH",
+      "importance": 0.0071
+    },
+    {
+      "feature": "Exertional CP",
+      "importance": 0.007
+    },
+    {
+      "feature": "Lymph",
+      "importance": 0.0046
+    },
+    {
+      "feature": "Ex-Smoker",
+      "importance": 0.0046
+    },
+    {
+      "feature": "CVA",
+      "importance": 0.0045
+    },
+    {
+      "feature": "Tinversion",
+      "importance": 0.0024
+    },
+    {
+      "feature": "Thyroid Disease",
+      "importance": 0.0024
+    },
+    {
+      "feature": "CRF",
+      "importance": 0.0002
+    },
+    {
+      "feature": "Lung rales",
+      "importance": 0.0002
+    },
+    {
+      "feature": "Diastolic Murmur",
+      "importance": 0.0
+    },
+    {
+      "feature": "Systolic Murmur",
+      "importance": 0.0
+    }
+  ]
+}

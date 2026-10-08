@@ -1,0 +1,445 @@
+{
+  "features": [
+    {
+      "id": "Age",
+      "name": "Age",
+      "type": "numerical",
+      "unit": "years",
+      "normal_range": "30 \u2013 85"
+    },
+    {
+      "id": "Weight",
+      "name": "Weight",
+      "type": "numerical",
+      "unit": "kg",
+      "normal_range": "45 \u2013 120"
+    },
+    {
+      "id": "Length",
+      "name": "Length",
+      "type": "numerical",
+      "unit": "cm",
+      "normal_range": "140 \u2013 200"
+    },
+    {
+      "id": "BMI",
+      "name": "BMI",
+      "type": "numerical",
+      "unit": "kg/m\u00b2",
+      "normal_range": "18.5 \u2013 35.0"
+    },
+    {
+      "id": "BP",
+      "name": "BP",
+      "type": "numerical",
+      "unit": "mmHg",
+      "normal_range": "90 \u2013 180"
+    },
+    {
+      "id": "PR",
+      "name": "PR",
+      "type": "numerical",
+      "unit": "bpm",
+      "normal_range": "50 \u2013 120"
+    },
+    {
+      "id": "FBS",
+      "name": "FBS",
+      "type": "numerical",
+      "unit": "mg/dL",
+      "normal_range": "70 \u2013 300"
+    },
+    {
+      "id": "CR",
+      "name": "CR",
+      "type": "numerical",
+      "unit": "mg/dL",
+      "normal_range": "0.5 \u2013 3.0"
+    },
+    {
+      "id": "TG",
+      "name": "TG",
+      "type": "numerical",
+      "unit": "mg/dL",
+      "normal_range": "50 \u2013 450"
+    },
+    {
+      "id": "LDL",
+      "name": "LDL",
+      "type": "numerical",
+      "unit": "mg/dL",
+      "normal_range": "50 \u2013 220"
+    },
+    {
+      "id": "HDL",
+      "name": "HDL",
+      "type": "numerical",
+      "unit": "mg/dL",
+      "normal_range": "20 \u2013 80"
+    },
+    {
+      "id": "BUN",
+      "name": "BUN",
+      "type": "numerical",
+      "unit": "mg/dL",
+      "normal_range": "7 \u2013 45"
+    },
+    {
+      "id": "ESR",
+      "name": "ESR",
+      "type": "numerical",
+      "unit": "mm/h",
+      "normal_range": "1 \u2013 65"
+    },
+    {
+      "id": "HB",
+      "name": "HB",
+      "type": "numerical",
+      "unit": "g/dL",
+      "normal_range": "10.0 \u2013 18.0"
+    },
+    {
+      "id": "K",
+      "name": "K",
+      "type": "numerical",
+      "unit": "mEq/L",
+      "normal_range": "3.5 \u2013 5.5"
+    },
+    {
+      "id": "Na",
+      "name": "Na",
+      "type": "numerical",
+      "unit": "mEq/L",
+      "normal_range": "130 \u2013 150"
+    },
+    {
+      "id": "WBC",
+      "name": "WBC",
+      "type": "numerical",
+      "unit": "cells/mcL",
+      "normal_range": "4,000 \u2013 14,000"
+    },
+    {
+      "id": "Lymph",
+      "name": "Lymph",
+      "type": "numerical",
+      "unit": "%",
+      "normal_range": "10 \u2013 55"
+    },
+    {
+      "id": "Neut",
+      "name": "Neut",
+      "type": "numerical",
+      "unit": "%",
+      "normal_range": "35 \u2013 85"
+    },
+    {
+      "id": "PLT",
+      "name": "PLT",
+      "type": "numerical",
+      "unit": "10\u00b3/mcL",
+      "normal_range": "120 \u2013 450"
+    },
+    {
+      "id": "EF-TTE",
+      "name": "EF-TTE",
+      "type": "numerical",
+      "unit": "%",
+      "normal_range": "20 \u2013 65"
+    },
+    {
+      "id": "Sex",
+      "name": "Sex",
+      "type": "categorical",
+      "options": [
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "id": "DM",
+      "name": "DM",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "HTN",
+      "name": "HTN",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Current Smoker",
+      "name": "Current Smoker",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Ex-Smoker",
+      "name": "Ex-Smoker",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "FH",
+      "name": "FH",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Obesity",
+      "name": "Obesity",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "CRF",
+      "name": "CRF",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "CVA",
+      "name": "CVA",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Airway disease",
+      "name": "Airway disease",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Thyroid Disease",
+      "name": "Thyroid Disease",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Function Class",
+      "name": "Function Class",
+      "type": "categorical",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "Typical Chest Pain",
+      "name": "Typical Chest Pain",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Dyspnea",
+      "name": "Dyspnea",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Atypical",
+      "name": "Atypical",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Nonanginal",
+      "name": "Nonanginal",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Exertional CP",
+      "name": "Exertional CP",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "LowTH Ang",
+      "name": "LowTH Ang",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Edema",
+      "name": "Edema",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Weak Peripheral Pulse",
+      "name": "Weak Peripheral Pulse",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Lung rales",
+      "name": "Lung rales",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Systolic Murmur",
+      "name": "Systolic Murmur",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Diastolic Murmur",
+      "name": "Diastolic Murmur",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Q Wave",
+      "name": "Q Wave",
+      "type": "categorical",
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "id": "St Elevation",
+      "name": "St Elevation",
+      "type": "categorical",
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "id": "St Depression",
+      "name": "St Depression",
+      "type": "categorical",
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "id": "Tinversion",
+      "name": "Tinversion",
+      "type": "categorical",
+      "options": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "id": "LVH",
+      "name": "LVH",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Poor R Progression",
+      "name": "Poor R Progression",
+      "type": "categorical",
+      "options": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "id": "Region RWMA",
+      "name": "Region RWMA",
+      "type": "categorical",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "VHD",
+      "name": "VHD",
+      "type": "categorical",
+      "options": [
+        "Moderate",
+        "N",
+        "Severe",
+        "mild"
+      ]
+    }
+  ],
+  "excluded_leakage": [
+    "LAD",
+    "LCX",
+    "RCA",
+    "Cath"
+  ],
+  "model_version": "Cardio3D-v1.0",
+  "training_date": "2026-10-07"
+}

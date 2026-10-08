@@ -1,0 +1,6 @@
+{
+  "name": "Cardio3D AI — Interactive CAD Risk & Vessel Stenosis Visualization",
+  "description": "AI-powered clinical decision-support application combining machine-learning coronary artery disease prediction, vessel-specific LAD/LCX/RCA stenosis risk, and interactive 3D coronary anatomy visualization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
